@@ -94,6 +94,30 @@
             text-decoration: none;
             cursor: pointer;
         }
+        .accordion {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .accordion-button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            border: none;
+            outline: none;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        .accordion-button:hover {
+            background-color: #0056b3;
+        }
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
     </style>
 </head>
 <body>
@@ -109,7 +133,7 @@
     <a href="#roadmap">Roadmap</a>
     <a href="#news">News</a>
     <a href="#community">Community Links</a>
-    <a href="#whitelist" id="openModal">Whitelist</a>
+    <a href="#whitepaper" id="openModal">Whitepaper</a>
 </nav>
 
 <div class="content">
@@ -152,51 +176,53 @@
     </div>
 </div>
 
-<!-- Modal for Whitelist -->
+<!-- Modal for Whitepaper -->
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Whitelist</h2>
-        <p>Enter your details to join the whitelist:</p>
-        <form>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <input type="submit" value="Join Whitelist">
-        </form>
-    </div>
-</div>
+        <h2>Whitepaper: Charlie Coin (CHR)</h2>
 
-<footer>
-    <p>All rights reserved &copy; 2024</p>
-</footer>
+        <div class="accordion">
+            <button class="accordion-button">Introduction</button>
+            <div class="accordion-content">
+                <p>In the rapidly growing world of cryptocurrencies, Charlie Coin (CHR) emerges as an innovative meme coin designed to honor the legacy of a silent film legend. Charlie Coin aims to blend humor and history while engaging a community interested in digital culture and investment.</p>
+            </div>
+        </div>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+        <div class="accordion">
+            <button class="accordion-button">Vision</button>
+            <div class="accordion-content">
+                <p>Our vision is to create a global community dedicated to preserving the legacy of cinematic arts while providing a flexible financial tool that enhances user involvement in the cryptocurrency realm.</p>
+            </div>
+        </div>
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("openModal");
+        <div class="accordion">
+            <button class="accordion-button">Features of Charlie Coin</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Innovative Meme Coin: Charlie Coin is not just a currency; it represents an idea and a passion for cinema.</li>
+                    <li>Active Community: We aim to build an interactive community that participates in the project's development and expansion.</li>
+                    <li>Investment Opportunities: Charlie Coin offers opportunities for investors to engage in the launch of a unique currency.</li>
+                </ul>
+            </div>
+        </div>
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        <div class="accordion">
+            <button class="accordion-button">Token Details</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Token Name: Charlie Coin</li>
+                    <li>Token Symbol: CHR</li>
+                    <li>Total Supply: 1,000,000,000 CHR</li>
+                    <li>Smart Contract: 0x1ce6C9567Fa5E4C97a7DaAFF75EAE9A0F2994776</li>
+                </ul>
+            </div>
+        </div>
 
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
-</body>
-</html>
+        <div class="accordion">
+            <button class="accordion-button">Use Cases</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Trading: Users can buy and sell CHR on various trading platforms.</li>
+                    <li>Rewards: We plan to offer rewards for early investors and community participants.</li>
+                    <li>Partnerships: Collaborate with artistic
